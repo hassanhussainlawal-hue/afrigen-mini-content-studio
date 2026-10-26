@@ -46,7 +46,7 @@ describe("removeDuplicatePosts", () => {
     const unique = removeDuplicatePosts(posts);
 
     expect(unique.map((post) => post.id)).toEqual([1, 2]);
-    expect(unique[0].title).toBe("First");
+    expect(unique[0]?.title).toBe("First");
   });
 
   it("leaves a list without duplicates unchanged", () => {

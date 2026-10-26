@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const NAV_ITEMS = [
   { label: "Create", href: "#create" },
   { label: "Explore posts", href: "#posts" },
@@ -9,12 +11,13 @@ function Header() {
     <header className="sticky top-0 z-10 border-b border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
         <div className="flex items-center gap-3">
-          <div
-            aria-hidden="true"
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-bold text-primary-foreground"
-          >
-            A
-          </div>
+          <img
+            src={logo}
+            alt="Afrigen Mini Content Studio logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 shrink-0"
+          />
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold leading-tight sm:text-base">
               Afrigen Mini Content Studio

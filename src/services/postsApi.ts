@@ -45,7 +45,7 @@ export interface CreatePostResponse {
 
 /** One error type for both network failures and unsuccessful HTTP responses. */
 export class PostsApiError extends Error {
-  readonly status?: number;
+  readonly status: number | undefined;
 
   constructor(message: string, status?: number) {
     super(message);

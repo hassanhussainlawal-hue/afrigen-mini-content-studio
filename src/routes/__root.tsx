@@ -81,6 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Lovable App" },
       { name: "description", content: "Lovable Generated Project" },
       { name: "author", content: "Lovable" },
+      { name: "google-site-verification", content: "qlzDd2h5KgST_FhxvRpqJaOPvcgVsiuEDNVMc8nKXhY" },
       { property: "og:title", content: "Lovable App" },
       { property: "og:description", content: "Lovable Generated Project" },
       { property: "og:type", content: "website" },
